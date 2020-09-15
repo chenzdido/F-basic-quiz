@@ -43,7 +43,7 @@ window.onload = async () => {
   description.innerText = user.description;
   let a = "";
   for (let i = 0; i < edu.length; ) {
-    a += `<li><div>${edu[i].year}<div><div><p>${edu[i].description}<p><p>${edu[i].title}<p><div></li>`;
+    a += `<li class="edu"><div class="eduyear">${edu[i].year}</div><div class="des"><p>${edu[i].description}</p><p>${edu[i].title}</p></div></li>`;
     i += 1;
   }
   edulist.innerHTML = a;

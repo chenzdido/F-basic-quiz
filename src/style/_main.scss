@@ -1,0 +1,21 @@
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.education,
+.about {
+  width: 800px;
+}
+
+.edu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.des {
+  width: 700px;
+}
