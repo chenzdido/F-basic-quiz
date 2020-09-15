@@ -49,3 +49,5 @@ window.onload = async () => {
   }
   edulist.innerHTML = a;
 };
+
+export default userdata;
