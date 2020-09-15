@@ -37,6 +37,7 @@ let edu;
 window.onload = async () => {
   user = await userdata();
   edu = await educations();
+  window.history.pushState({}, null, `/users/${user.id}`);
   logo.src = user.imgURL;
   age.innerText = user.age;
   name.innerText = user.name;
