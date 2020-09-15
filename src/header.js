@@ -17,11 +17,11 @@ const userdata = () =>
     .then((data) => {
       return data;
     });
-let s;
+let user;
 window.onload = async () => {
-  s = await userdata();
-  logo.src = s.imgURL;
-  age.innerText = s.age;
-  name.innerText = s.name;
-  description.innerText = s.description;
+  user = await userdata();
+  logo.src = user.imgURL;
+  age.innerText = user.age;
+  name.innerText = user.name;
+  description.innerText = user.description;
 };
