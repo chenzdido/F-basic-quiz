@@ -1,6 +1,7 @@
 import fetchMock from "fetch-mock";
 import userdata from "../index";
 
+// TODO 没有安装 fetch-mock 这个依赖
 fetchMock.mock("http://localhost:8080/users/1/educations", {
   id: 1,
   name: "KAMIL",

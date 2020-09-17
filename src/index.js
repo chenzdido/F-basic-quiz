@@ -4,6 +4,8 @@ const name = document.getElementById("name");
 const description = document.getElementById("description");
 const edulist = document.getElementById("edulist");
 
+// TODO 可以通过模块和职责对该js里对内容进行拆分并放入不同对js模块中
+// TODO user id应该从url中获取
 const userdata = () =>
   fetch("http://localhost:8080/users/1", {
     cache: "no-cache",
@@ -42,6 +44,7 @@ window.onload = async () => {
   age.innerText = user.age;
   name.innerText = user.name;
   description.innerText = user.description;
+  // TODO 变量名需要更有意义
   let a = "";
   edu.forEach((e) => {
     a += `<li class="edu"><div class="eduyear">${e.year}</div><div class="des"><p class="de">${e.description}</p><p>${e.title}</p></div></li>`;
